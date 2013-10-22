@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="85257BDE004F41FA" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="2b2" sequence="68" unid="AEB4570B78E74D4685257B4F00738139">
+<created><datetime dst="true">20130416T170137,21-04</datetime></created>
+<modified><datetime dst="true">20130906T102545,04-04</datetime></modified>
+<revised><datetime dst="true">20130830T141505,98-04</datetime></revised>
+<lastaccessed><datetime dst="true">20130906T102545,04-04</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130906T102545,04-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Philippe Riand/OU=Westford/O=IBM</name></updatedby>
+<item name="$Flags"><text>gC~4;</text></item>
+<item name="$TITLE" sign="true"><text>ManageJavaSnippetsForm.xsp</text></item>
+
+
+
+
+<item name="$FileNames" sign="true"><text>ManageJavaSnippetsForm.xsp</text></item>
+
+<item name="$DesignerVersion"><text>8.5</text></item>
+
+
+
+</note>

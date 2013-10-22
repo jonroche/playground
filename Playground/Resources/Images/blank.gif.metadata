@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="85257BDE004F41FA" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="12a" sequence="21" unid="FECE89EF4431CE1685257AA8006A7C81">
+<created><datetime>20121031T142306,89-05</datetime></created>
+<modified><datetime dst="true">20130906T102543,08-04</datetime></modified>
+<revised><datetime dst="true">20130730T084305,13-04</datetime></revised>
+<lastaccessed><datetime dst="true">20130906T102543,08-04</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130906T102543,08-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Philippe Riand/OU=Westford/O=IBM</name></updatedby>
+<item name="$TITLE"><text>blank.gif</text></item>
+<item name="$Flags"><text>D34CiQ</text></item>
+<item name="$FlagsExt"><text>D</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+<item name="$FileModDT" sign="true"><datetime dst="true">20120416T125800,00-04</datetime></item>
+<item name="$ImageNames" sign="true"><text>blank.gif</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+</note>

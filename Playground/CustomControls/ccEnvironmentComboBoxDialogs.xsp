@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	<xe:dialog id="customEnvDialog" title="Custom Environment"
+		style="height: 55em; width: 70em;" styleClass="EnvDialog">
+		<xp:panel style="margin-left:10px; margin-right: 5px;">
+			<xp:this.data>
+				<xp:dominoDocument var="document1" formName="Environment">
+					<xp:this.postNewDocument><![CDATA[#{javascript:var env = dataAccess.getCustomEnvironment();
+dataAccess.writeEnvironment(env,document1.getDocument());}]]></xp:this.postNewDocument>
+				</xp:dominoDocument>
+			</xp:this.data>
+			<xe:dialogContent id="dialogContent1">
+				<xe:dynamicContent id="dynp" defaultFacet="editor"
+					partialEvents="true">
+					<xp:this.facets>
+						<xe:formTable xp:key="wiz1" id="formTable1"
+							formTitle="Define your target platform" formDescription="What platform do you want to connect to?"
+							labelWidth="12em" style="width: 100%; height: 100%"
+							labelPosition="above">
+							<xe:formRow id="formRow1"
+								label="What server do you want to connect to?">
+								<xp:comboBox id="comboCat">
+									<xp:selectItems>
+										<xp:this.value><![CDATA[#{javascript:optionsBean.getEnvironmentCategories().getCategoryNames()}]]></xp:this.value>
+									</xp:selectItems>
+								</xp:comboBox>
+							</xe:formRow>
+<!-- 						
+							<xe:formRow id="formRow3"
+								label="What kind of authentication mechanism would you like to use?">
+								<xp:comboBox id="comboGrp">
+									<xp:selectItems>
+										<xp:this.value><![CDATA[#{javascript:optionsBean.getEnvironmentCategoryGroupNames(getComponent('comboCat').getValue())}]]></xp:this.value>
+									</xp:selectItems>
+								</xp:comboBox>
+							</xe:formRow>
+ -->
+							<xe:formRow id="formRow2" label="Enter the parameters for your server">
+								<xp:dataTable id="dataTable1" rows="30">
+									<xp:this.value><![CDATA[#{javascript:return [1,2,3,4]}]]></xp:this.value>
+									<xp:column id="column1">Title</xp:column>
+									<xp:column id="column2">Value</xp:column>
+								</xp:dataTable>
+							</xe:formRow>
+
+
+						</xe:formTable>
+						<xc:ccEnvironmentForm xp:key="editor"
+							editbean="true"></xc:ccEnvironmentForm>
+					</xp:this.facets>
+				</xe:dynamicContent>
+			</xe:dialogContent>
+			<xe:dialogButtonBar id="dialogButtonBar1">
+				<xp:panel id="panel1">
+					<xp:button value="Save" id="button4">
+						<xp:eventHandler event="onclick" submit="true"
+							refreshMode="complete">
+							<xp:this.action><![CDATA[#{javascript:var env = dataAccess.getCustomEnvironment();
+dataAccess.readEnvironment(env,document1.getDocument(true));
+if(true) {
+	context.reloadPage();
+} else {
+	var dlg = getComponent('customEnvDialog')
+	dlg.hide();
+}
+}]]></xp:this.action>
+						</xp:eventHandler>
+					</xp:button>
+					<xp:button value="Cancel" id="button6">
+						<xp:eventHandler event="onclick" submit="false">
+							<xp:this.script><![CDATA[XSP.closeDialog('#{id:customEnvDialog}')]]></xp:this.script>
+						</xp:eventHandler>
+					</xp:button>
+				</xp:panel>
+			</xe:dialogButtonBar>
+		</xp:panel>
+	</xe:dialog>
+
+	<xe:tooltipDialog id="envTooltipDialog" title="Environment">
+		<xp:panel style="max-width: 450px; margin-left:10px; margin-right: 5px;">
+			<xp:this.data>
+				<xp:dominoDocument var="document1" formName="Environment"
+					action="openDocument">
+					<xp:this.documentId><![CDATA[#{javascript:var e = dataAccess.getEnvironment(sessionScope.environment)
+return e!=null ? e.getNoteID() : null}]]></xp:this.documentId>
+					<xp:this.postOpenDocument><![CDATA[#{javascript:if(sessionScope.environment==dataAccess.CUSTOM) {
+	var env = dataAccess.getCustomEnvironment();
+	document1.replaceItemValue("Name",env.getName());
+	document1.replaceItemValue("Description",env.getDescription());
+}
+}]]></xp:this.postOpenDocument>
+				</xp:dominoDocument>
+			</xp:this.data>
+			<xp:text escape="true" id="computedField1" value="#{document1.Name}"
+				style="font-weight:bold;font-style:italic">
+			</xp:text>
+			<br />
+			<xp:inputRichText id="inputRichText1" value="#{document1.Description}"
+				readonly="true">
+			</xp:inputRichText>
+		</xp:panel>
+	</xe:tooltipDialog>
+
+</xp:view>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='85257BDE004F41FA'>
+<noteinfo noteid='34a' unid='868830CDD98DD9F185257B73005E89AA' sequence='10'>
+<created><datetime dst='true'>20130522T131236,26-04</datetime></created>
+<modified><datetime dst='true'>20130906T102545,80-04</datetime></modified>
+<revised><datetime dst='true'>20130730T084303,04-04</datetime></revised>
+<lastaccessed><datetime dst='true'>20130906T102545,80-04</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130906T102545,80-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Philippe Riand/OU=Westford/O=IBM</name></updatedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>AllAPIExplorer</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+iAAFADQAMAAEAA8ABwAFAAkAQVBJRXhwbG9yZXJQYXRoT3JkZXJUU1RpdGxlJENvbmZsaWN0BAAE
+AAAAOgAFAAQARm9ybQEAAwBBUEkACgIEAAUADwBBUElFeHBsb3JlclBhdGgAAQAAAAoCBAAeARwC
+AwAHABQADgAJTDFTM1M0UzZTMkU3Uw==
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+KgACAABEgGYAAAAPAIBmAA8ABwBBUElFeHBsb3JlclBhdGhPcmRlclRT
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQADAAMACgAAAFZDAQAPAA8AAAAAAP8AAQAACgAAAAAAAAAAAAICAAAAVkMBAAcABwAAAAAAbwAB
+AAAKAAAAAAAAAAAAAgIAAABWQwAABQAFAAAAAAB/AQEAAAoAAAAAAAAAAAACAgAAAEFQSUV4cGxv
+cmVyUGF0aEFQSUV4cGxvcmVyUGF0aE9yZGVyVFNPcmRlclRTVGl0bGVUaXRsZSYAAQAAAAEBAAkB
+AAAKAQEOCgAAAQCtKwEAAQABAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA
+//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAA
+AAAAAABXQwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAQgAAAAAA
+AQD///8ABQD///8AAQAAAAAAAAAAAAAAAAABAP///wABAP///wAAAAEAAAAAAAEAAAAAAAEAAAAA
+AAAACAAAAAAAAQA=
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Flags'><text>PY</text></item>
+<item name='$WebFlags'><text>A</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

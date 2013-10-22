@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="85257BDE004F41FA" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="396" sequence="58" unid="12B697A764317A4C85257B730072FF49">
+<created><datetime dst="true">20130522T165604,57-04</datetime></created>
+<modified><datetime dst="true">20131022T155437,86+01</datetime></modified>
+<revised><datetime dst="true">20131022T155437,85+01</datetime></revised>
+<lastaccessed><datetime dst="true">20131022T155437,86+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130906T102546,18-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Philippe Riand/OU=Westford/O=IBM</name><name>CN=jonathan/O=ibm</name></updatedby>
+<wassignedby><name>CN=jonathan/O=ibm</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>doc/DocAPI.java</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>doc/DocAPI.java</text></item>
+
+
+
+
+</note>

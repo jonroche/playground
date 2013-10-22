@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='85257BDE004F41FA'>
+<noteinfo noteid='186' unid='63A9C8767A1DA52685257A8E005525AD' sequence='32'>
+<created><datetime dst='true'>20121005T113002,05-04</datetime></created>
+<modified><datetime dst='true'>20130906T102543,54-04</datetime></modified>
+<revised><datetime dst='true'>20130731T171405,49-04</datetime></revised>
+<lastaccessed><datetime dst='true'>20130906T102543,54-04</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130906T102543,54-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Philippe Riand/OU=Westford/O=IBM</name></updatedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>AllSnippetsByImportSource</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+XgECAAwAAgAkNWkAAwAFADwANwAHAAQADAACAAQAAgAJAAQAZm9ybUltcG9ydFNvdXJjZUlkTmFt
+ZSQ1JENvbmZsaWN0JFJFRgAEAAQAAADMAAUABABGb3JtAQAOAEFQSURlc2NyaXB0aW9uCgIEAAUA
+BABGb3JtAQANAEdhZGdldFNuaXBwZXQACgIEAB0CBQAEAEZvcm0BABEASmF2YVNjcmlwdFNuaXBw
+ZXQACgIEAB0CBQAEAEZvcm0BAAsASmF2YVNuaXBwZXQACgIEAB0CBQAEAEZvcm0BABEAT3BlblNv
+Y2lhbFNuaXBwZXQACgIEAB0CBQAEAEZvcm0BAA0AWFBhZ2VzU25pcHBldAAKAgQAHQIEAAMABwBE
+AD4ACTNTNFM2UzdTOVMxMFMxMlMxM1MxNVMxNlMxOFMxOVMyMVMyMlMyNFMyNVMyN1MyOFMzMFMz
+MVMzM1MzNFM=
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+OAAEAABEiGYHAAAEAIhmBwQADAAIZgAQAAIAgGYAEgAEAGZvcm1JbXBvcnRTb3VyY2VJZE5hbWU=
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQAFAAcACAAAAFZDAwAEAAQAAAAAAFAAAQAACgABAAAAAAAAAAICAAAAVkMDAAwADQAAAAAAqgAB
+AAAKAAEAAAAAAAAAAgIAAABWQwEAAgACAAAAAADKAAEAAAoAAQAAAAAAAAACAgAAAFZDAQAEAAQA
+AAAAALIAAQAACgAAAAAAAAAAAAICAAAAVkMAAAIACgAOAAAAUAABAAAKAAAAAAAAAAAAAgIAAABm
+b3JtVHlwZUltcG9ydFNvdXJjZUltcG9ydCBTb3VyY2VJZElETmFtZU5hbWUkNUNyZWF0ZURhdGUO
+AAIADAACACQ1aQADACYAAQAAAAEBAAkBAAAKAQEOCgAAAQCtKwEAAQABAAAAAAAAAAAAV0MBAQAJ
+AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAA
+AAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABXQwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAD//wAAAAAAAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAA
+AAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABCAAAA
+AAABAP///wAFAP///wABAAAAAAAAAAAAAAAAAAEA////AAEA////AAAAAQAAAAAAAQAAAAAAAQAA
+AAAAAAAIAAAAAAABAA==
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Flags'><text>PY</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$SelQuery' sign='true'>
+<rawitemdata type='f'>
+gQYAAAAAif9rAAAAAAAGAA4ADQARAAsAEQANAEFQSURlc2NyaXB0aW9uR2FkZ2V0U25pcHBldEph
+dmFTY3JpcHRTbmlwcGV0SmF2YVNuaXBwZXRPcGVuU29jaWFsU25pcHBldFhQYWdlc1NuaXBwZXQA
+</rawitemdata></item></note>
+

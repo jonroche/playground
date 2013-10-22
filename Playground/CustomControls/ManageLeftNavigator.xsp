@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xe:navigator id="outline">
+		<xe:this.treeNodes>
+			<xe:basicContainerNode transparent="true"
+				loaded="${javascript:optionsBean.javaScriptSnippetsEnabled}">
+				<xe:pageTreeNode page="ManageJavaScriptSnippetsByCategory"
+					label="JavaScript Snippets" selection="/Manage/JavaScriptSnippets">
+				</xe:pageTreeNode>
+				<xe:pageTreeNode page="ManageImportJavaScriptSnippets" label="Import JavaScript Snippets"
+					selection="/Manage/ImportJavaScriptSnippets">
+				</xe:pageTreeNode>
+			</xe:basicContainerNode>
+			<xe:basicContainerNode transparent="true"
+				loaded="${javascript:optionsBean.javaSnippetsEnabled}">
+				<xe:separatorTreeNode></xe:separatorTreeNode>
+				<xe:pageTreeNode page="ManageJavaSnippetsByCategory"
+					label="Java Snippets" selection="/Manage/JavaSnippets">
+				</xe:pageTreeNode>
+				<xe:pageTreeNode page="ManageImportJavaSnippets" label="Import Java Snippets"
+					selection="/Manage/ImportJavaSnippets">
+				</xe:pageTreeNode>
+			</xe:basicContainerNode>
+			<xe:basicContainerNode transparent="true"
+				loaded="${javascript:optionsBean.gadgetSnippetsEnabled}">
+				<xe:separatorTreeNode></xe:separatorTreeNode>
+				<xe:pageTreeNode page="ManageGadgetSnippetsByCategory"
+					label="OpenSocial Gadgets" selection="/Manage/GadgetSnippets">
+				</xe:pageTreeNode>
+				<xe:pageTreeNode page="ManageImportGadgetSnippets" label="Import OpenSocial Gadgets"
+					selection="/Manage/ImportGadgetSnippets">
+				</xe:pageTreeNode>
+			</xe:basicContainerNode>
+			<xe:basicContainerNode transparent="true"
+				loaded="${javascript:optionsBean.xpagesSnippetsEnabled}">
+				<xe:separatorTreeNode></xe:separatorTreeNode>
+				<xe:pageTreeNode page="ManageXPagesSnippetsByCategory"
+					label="XPages Snippets" selection="/Manage/XPagesSnippets">
+				</xe:pageTreeNode>
+				<xe:pageTreeNode page="ManageImportXPagesSnippets" label="Import XPages Snippets"
+					selection="/Manage/ImportXPagesSnippets">
+				</xe:pageTreeNode>
+			</xe:basicContainerNode>
+			<xe:basicContainerNode transparent="true"
+				loaded="${javascript:optionsBean.explorerEnabled}">
+				<xe:separatorTreeNode></xe:separatorTreeNode>
+				<xe:pageTreeNode page="ManageAPIsByCategory" label="APIs"
+					selection="/Manage/ManageAPIs">
+				</xe:pageTreeNode>
+				<xe:pageTreeNode page="ApiDocumentation" label="Edit API Documentation">
+				</xe:pageTreeNode>
+				<xe:pageTreeNode page="ManageImportAPIs" label="Import API Descriptions"
+					selection="/Manage/ImportAPIs">
+				</xe:pageTreeNode>
+			</xe:basicContainerNode>
+			<xe:separatorTreeNode></xe:separatorTreeNode>
+			<xe:pageTreeNode page="ManageEnvironments" label="Runtime Environments"
+				selection="/Manage/Environments">
+			</xe:pageTreeNode>
+			<xe:pageTreeNode page="ManageOptions" label="Customization"
+				selection="/Manage/Options">
+			</xe:pageTreeNode>
+		</xe:this.treeNodes>
+	</xe:navigator>
+</xp:view>

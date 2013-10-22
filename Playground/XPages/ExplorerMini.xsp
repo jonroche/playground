@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	<xp:this.resources>
+		<xp:styleSheet href="/explorer.css"></xp:styleSheet>
+		<xp:script src="/explorer.js" clientSide="true"></xp:script>
+		<xp:dojoModule name="dojo.hash"></xp:dojoModule>
+		<xp:dojoModule name="dijit.form.ValidationTextBox"></xp:dojoModule>
+		<xp:dojoModule name="dijit.form.ComboBox"></xp:dojoModule>
+		<xp:dojoModule name="dijit.form.NumberTextBox"></xp:dojoModule>
+		<xp:dojoModule name="dijit.form.SimpleTextarea"></xp:dojoModule>
+		<xp:dojoModule name="extlib.prettify.prettify"></xp:dojoModule>
+		<xp:dojoModule name="extlib.vkbeautify.vkbeautify"></xp:dojoModule>
+		<xp:styleSheet href="/.ibmxspres/.extlib/prettify/prettify.css"></xp:styleSheet>
+		<!--
+			TEMP until we move to Domino 9 and define/require will defined for
+			these modules <xp:dojoModule name="sbt.Proxy"></xp:dojoModule>
+			<xp:dojoModule name="sbt.Endpoint"></xp:dojoModule>
+		-->
+		<xp:dojoModule name="dojo.fx"></xp:dojoModule>
+	</xp:this.resources>
+
+	<script type="text/javascript" src="#{javascript:apiBean.getToolkitUrl()}"></script>
+
+	<xp:scriptBlock>
+		<xp:this.value><![CDATA[var pageGlobal = {
+	dynPanel:		'#{id:dynp}',
+}
+function refreshFrameHeight() {
+	parent.postMessage(getBodyHeight(),"*")
+}
+function getBodyHeight() {
+	var dv = dojo.byId('#{id:mainDiv}');
+	if(dv) {
+		return dv.offsetHeight+5;
+	}
+	return -1; 
+}
+]]></xp:this.value>
+	</xp:scriptBlock>
+
+	<xc:ccMainPageResources></xc:ccMainPageResources>
+	<xp:div id="mainDiv" style="padding-top:10.0px">
+		<xp:link escape="true" text="Open the API Explorer in a separate window"
+			id="link4" target="_blank">
+			<xp:this.value><![CDATA[#{javascript:var u = context.getUrl().toString();
+u = u.replace("ExplorerMini.xsp","Explorer.xsp")
+return u;}]]></xp:this.value>
+		</xp:link>
+		<xe:dynamicContent id="dynp" defaultFacet="api"
+			useHash="false" partialEvents="true">
+			<xp:this.facets>
+				<xp:panel xp:key="api" id="panel1">
+					<xp:this.dataContexts>
+						<xp:dataContext var="apis">
+							<xp:this.value><![CDATA[#{javascript:var e = param["api"]
+return apiBean.loadAPI(e,param["unid"]);
+}]]></xp:this.value>
+						</xp:dataContext>
+					</xp:this.dataContexts>
+					<xp:div
+						rendered="#{javascript:return !(apis.items &amp;&amp; apis.items.length>0);}">
+						There is no API Explorer entry available
+					</xp:div>
+					<xp:div
+						rendered="#{javascript:return (apis.items &amp;&amp; apis.items.length>0);}">
+						<xp:repeat id="repeat1" var="item"
+							value="#{javascript:return apis.items;}" indexVar="idx">
+							<xc:ccExplorerAPIEntry expandEntries="true">
+							</xc:ccExplorerAPIEntry>
+						</xp:repeat>
+					</xp:div>
+					<script>
+						setTimeout(refreshFrameHeight,0);
+					</script>
+				</xp:panel>
+			</xp:this.facets>
+		</xe:dynamicContent>
+	</xp:div>
+	<xp:scriptBlock>
+		<xp:this.value><![CDATA[function loadFromHash() {
+	if(dojo.hash()) {
+		var obj = dojo.queryToObject(dojo.hash());
+		if(obj.api) {
+			loadAPI(obj.api,obj.unid);
+		} 
+	} else {
+		emptyAPI();
+	}
+}
+dojo.addOnLoad( function() {	
+	if(dojo.hash()) {
+		loadFromHash()
+	}
+	setTimeout(refreshFrameHeight,0);
+})
+]]></xp:this.value>
+	</xp:scriptBlock>
+
+</xp:view>
